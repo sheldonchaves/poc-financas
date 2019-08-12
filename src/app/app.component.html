@@ -8,23 +8,27 @@
   <form>
     <div class="form-group">
       <label >Title</label>
-      <input type="text" class="form-control" placeholder="title">
+      <input name="label" type="text" class="form-control" [(ngModel)]="item.label" placeholder="title">
     </div>
 
     <div class="form-group">
-      <label >Tipo</label>
-      <select multiple class="form-control" >
-        <option>Entrada</option>
-        <option>Saida</option>
-
-      </select>
+      <label >Value</label>
+      <input name="value" type="number" class="form-control" [(ngModel)]="item.value" placeholder="0,00">
     </div>
+
+    <!-- <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-success">Entrada</button>
+      <button type="button" class="btn btn-danger">Saida</button>
+    </div> -->
+
+    <hr>
+
     <div class="form-group">
       <label >Descrição</label>
-      <textarea class="form-control" rows="3"></textarea>
+      <textarea name="desc" class="form-control" [(ngModel)]="item.desc" rows="3"></textarea>
     </div>
   </form>
 
-  <button class="btn btn-success btn-block">Add</button>
+  <button class="btn btn-success btn-block" (click)="addNew()">Add</button>
 
 </p-sidebar>

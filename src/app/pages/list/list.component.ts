@@ -8,7 +8,7 @@ import { AccountService } from 'src/app/service/account.service';
 })
 export class ListComponent implements OnInit {
 
-  constructor(private service:AccountService) { }
+  constructor(public service:AccountService) { }
 
   ngOnInit() {
   }

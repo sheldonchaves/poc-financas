@@ -3,7 +3,7 @@
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1 ">{{item.label}}</h5>
       <div class="value">
-        R$ {{item.value}}
+        {{item.value | currency:'BRL'}}
       </div>
     </div>
     <small class="text-gray">Donec id elit non mi porta.</small>
@@ -24,7 +24,7 @@
       <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1 ">Saldo</h5>
           <div class="value total">
-            R$ 2970,00
+            {{service.total | currency:'BRL'}}
           </div>
         </div>
   </li>
