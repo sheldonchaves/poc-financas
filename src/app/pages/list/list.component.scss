@@ -1,0 +1,18 @@
+.text-gray{
+  color: #666;
+}
+.value{
+  font-weight: 600;
+  font-size: 0.9em;
+
+  &.total{
+    font-size: 1.3em;
+  }
+}
+
+
+.total-list{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

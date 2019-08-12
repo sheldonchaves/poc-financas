@@ -2,4 +2,27 @@
 
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<p-sidebar [(visible)]="service.opened">
+
+
+  <form>
+    <div class="form-group">
+      <label >Title</label>
+      <input type="text" class="form-control" placeholder="title">
+    </div>
+
+    <div class="form-group">
+      <label >Tipo</label>
+      <select multiple class="form-control" >
+        <option>Entrada</option>
+        <option>Saida</option>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label >Descrição</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+  </form>
+
+</p-sidebar>

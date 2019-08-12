@@ -1,1 +1,31 @@
-<p>list works!</p>
+<div class="list-group">
+  <a href="#" class="list-group-item " *ngFor="let item of service.listItems" [class.text-success]='item.value > 0'  [class.text-danger]='item.value < 0'>
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">{{item.label}}</h5>
+      <div class="value">
+        R$ {{item.value}}
+      </div>
+    </div>
+    <small class="text-gray">Donec id elit non mi porta.</small>
+  </a>
+
+
+
+
+</div>
+
+<ul class="list-group total-list">
+
+
+
+
+  <li class="list-group-item list-group-item-primary">
+
+      <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 ">Saldo</h5>
+          <div class="value total">
+            R$ 2970,00
+          </div>
+        </div>
+  </li>
+</ul>
