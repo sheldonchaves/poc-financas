@@ -7,7 +7,8 @@ import { Item } from './models/item';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent  implements OnInit {
+
+export class AppComponent implements OnInit {
 
   item:Item = new Item();
 
