@@ -1,13 +1,13 @@
-<div class="list-group">
-  <a href="#" class="list-group-item " *ngFor="let item of service.listItems" [class.text-success]='item.value > 0'  [class.text-danger]='item.value < 0'>
-    <div class="d-flex w-100 justify-content-between">
+<div id="history" class="list-group">
+  <a href="#{{i}}" class="list-group-item" *ngFor="let item of service.listItems; let i = index" [class.text-success]='item.value > 0'  [class.text-danger]='item.value < 0'>
+    <div id="{{i}}" class="d-flex w-100 justify-content-between">
       <h5 class="mb-1 ">{{item.label}}</h5>
       <div class="value">
         {{item.value | currency:'BRL'}}
       </div>
     </div>
     <div class="d-flex w-100 justify-content-between">
-      <small class="text-gray">{{item.desc}}</small>
+      <small class="text-gray description">{{item.desc}}</small>
       <small class="text-gray">{{item.date}}</small>
     </div>
   </a>

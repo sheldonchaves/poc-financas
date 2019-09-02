@@ -10,6 +10,19 @@
   }
 }
 
+div#history {
+  a.list-group-item {
+    p.description {
+      display: none;
+    }
+
+    &:target {
+      p.description {
+        display: unset;
+      }
+    }
+  }
+}
 
 .total-list{
   position: fixed;
