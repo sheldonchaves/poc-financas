@@ -11,22 +11,15 @@
       <small class="text-gray">{{item.date}}</small>
     </div>
   </a>
-
-
 </div>
 
 <ul class="list-group total-list">
-
-
-
-
   <li class="list-group-item list-group-item-primary">
-
-      <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1 ">Saldo</h5>
-          <div class="value total">
-            {{service.total | currency:'BRL'}}
-          </div>
-        </div>
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 ">Saldo</h5>
+      <div class="value total">
+        {{service.total | currency:'BRL'}}
+      </div>
+    </div>
   </li>
 </ul>

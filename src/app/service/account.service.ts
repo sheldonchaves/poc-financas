@@ -7,9 +7,13 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AccountService {
 
-  opened:boolean = false;
   listItems: Item[] = [];
+  listCategories: String[] = [
+    "A Pagar",
+    "A Receber"
+  ]
 
+  opened:boolean = false;
   total:number = 0;
 
   constructor(public cookie: CookieService) {
